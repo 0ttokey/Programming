@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container1{
+    width: 300px;
+    height: 50px;
+    border: 5px solid black;
+    margin: 20px auto;
+}
+
+/* Transition */
+/* digunakan untuk memberi efek transisi kepada */
+/* sebuah elemen */
+/* Valuenya: Properti *Durasi* Delay Fungsi */
+/* *Kata* yang berbintang berarti penting */
+/* dan juga bisa dikreasikan seperti dibawah */
+/* untuk lebih lengkap bisa lihat img belajar coding */
+.divtrans{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transition:6s 1s; 
+}
+/* *TIPS JANGAN LANGSUNG GUNAKAN SELECTOR ELEMENNYA LANGSUNG* */
+/* *TETAPI GUNAKAN CONTAINER LALU SELECTOR ELEMEN* */
+/* AGAR EFEK TRANSISINYA TIDAK PATAH-PATAH */
+/* CONTOHNYA SEPERTI DIBAWAH INI */
+.container1:hover .divtrans{
+    background-color: green;
+    margin-left:125px;
+    transform: scaleX(6);
+}
+
+.Battery{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Animation */
+/* digunakan untuk memberi animasi ke sebuah elemen */
+/* yang pertama harus dilakukan adalah */
+/* membuat Keyframes */
+/* lalu membuat properti animation */
+/* dan isi Valuenya */
+/* untuk lebih jelas bisa lihat img belajar coding */
+.divanim{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    animation: animasi1 3s ease infinite alternate forwards running;
+}
+@keyframes animasi1 {
+    0%{
+        height: 100px;
+        background-color: red;
+    }
+    50%{
+        height: 100px;
+        width: 200px;
+        background-color: orange;
+    }
+    100%{
+        height: 200px;
+        width: 200px;
+        background-color: green;
+    }
+}

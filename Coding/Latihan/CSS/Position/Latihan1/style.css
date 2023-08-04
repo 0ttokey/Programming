@@ -1,0 +1,80 @@
+.container{
+    border: 5px solid violet;
+    width: 300px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+/* Position */
+
+/* contoh Position */
+
+/* static/default */
+/* mempengaruhi elemen lain */
+/* jadi jika elemen static */
+/* bertabrakan dengan elemen lain */
+/* maka elemen yang tertabrak itu akan ikut/terdorong */
+.d1{
+    background-color: aquamarine;
+    margin-top: 30px;
+}
+
+/* Relative */
+/* tidak mempengaruhi elemen lain */
+/* jadi elemen lain tidak bisa ditabrak */
+/* tetapi kita bisa meletakan elemen lain */
+/* di posisi awal elemen yang kita beri properti relative */
+/* jadi seperti berbeda dimensi */
+
+/* sifat Relative */
+/* bergerak dari posisi awalnya */
+/* Relative bisa digunakan untuk membuat elemen parent untuk Absolute */
+.d2{
+    background-color: salmon;
+    position: relative;
+    top:20px;
+}
+
+/* Absolute */
+/* sama seperti Relative */
+/* tetapi kita tidak bisa meletakan elemen lain */
+/* di posisi awal elemen yang kita beri properti Absolute */
+/* jadi elemen yang dibawahnya berpikir elemen yang */
+/* kita beri posisi Absolute itu hilang */
+/* sehingga posisi awal elemen Absolute itu diambil */
+/* elemen di bawahnya */
+
+/* sifat Absolute */
+/* berbeda dengan Relative */
+/* Absolute bergerak dari posisi parent yang satu dimensi dengannya */
+/* di kasus ini yaitu Body */
+/* jadi walau diberi parent contohnya Div */
+/* dia tidak akan bergerak dari posisi parentnya */
+/* tapi kalau kita beri div properti NON-STATIC */
+/* div itu bisa 1 dimensi dan menjadi parent elemen Absolute */
+/* kalau bingung bisa liat img belajar */
+.d3{
+    background-color: lightgreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* sama seperti Absolute */
+/* tetapi dia tidak bisa mempunyai parent */
+/* jadi parentnya hanya halaman */
+/* jadi jika kita menggeser ke top0 right0 seperti dibawah */
+/* dia akan selalu berada di pojok kanan atas */
+/* BAHKAN WALAU KITA SCROLL */
+.d4{
+    background-color: gold;
+    position: fixed;
+    top: 0;
+    right: 0;
+}

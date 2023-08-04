@@ -1,0 +1,29 @@
+body {background-color: ghostwhite;
+text-align: center;}
+
+.spd_img {height: 200px;
+width: 200px;
+border-radius: 100px;
+font-family: 'Franklin Gothic Medium';}
+
+.Profile
+
+.spd_nma{font-family: monospace;
+padding-bottom: 50px;}
+
+p{font-family: arial;}
+
+.WR {padding-top: 50px;}
+
+h3{font-family: arial;}
+
+button{background-color: gray;
+padding: 10px;
+border-radius: 10px;
+margin: 10px;}
+
+a {color: azure;}
+
+.Jokes {padding-bottom: 50px;}
+
+footer{text-align: left;}

@@ -1,0 +1,167 @@
+/* Latihan CSS3 */
+
+body{
+    background-image: url(../img/bg1.jpg);
+    height: 800px;
+}
+
+div{
+    margin: 20px 0;
+}
+
+/* Border-Radius & Opacity */
+
+/* Border-Radius membuat ujung pojok elemen menjadi tumpul */
+/* bahkan sampai menjadi lingkaran */
+/* Valuenya: sampai lingkaran bisa pakai PX atau % */
+
+/* Opacity membuat elemen menjadi transparan */
+/* bahkan sampai tidak terlihat */
+/* Valuenya: 0-1 untuk value yang pakai koma */
+/* bisa ditulis koma(angka) */
+/* contoh: 0.6 bisa ditulis .6 */
+/* tapi untuk child dia tidak bisa lebih solid */
+/* parentnya contoh: parent opacity:0.5 */
+/* maka jika kita tulis childnya opacity: 1 */
+/* maka dia tidak tidak akan menjadi solid */
+/* malahan dia akan menjadi 0.5 sama seperti parentnya */
+/* jadi jika kita tulis childnya: opacity: 0.5 */
+/* maka dia akan menjadi opacity: 0.25 */
+/* karena parentnya 0.5,dan 0.5 dari 0,5 adalah 0.25 */
+/* jadi jika kita ingin parent dan child memiliki Opacity yang berbeda */
+/* kita bisa menggunakan RGBA seperti di bawah */
+/* A=Transparasi dan valuenya sama dengan opacity yaitu 0-1 */
+.div1{
+    background-color: rgba(250, 128, 114, .6);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Box-Shadow */
+/* untuk memberikan bayangan kepada elemen */
+/* Valuenya yaitu: */
+
+/* X Y Blur Color */
+
+/* Inset *Optional* (Bayangan nya akan ke dalam) */
+/* X(arah bayangan nya (Horizontal) ) */
+/* Y(arah bayang nya (Vertical) ) */
+/* Blur(ya blur) */
+/* Spread *Optional* (Size bayangannya) */
+/* Color(ya warna) */
+.divc1{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    opacity: 1;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,.75);
+}
+
+/* Contoh INSET */
+.div2{
+    background-color: lightgreen;
+    height: 200px;
+    width: 250px;
+    box-shadow: inset 0 0 5px 5px;
+}
+
+/* Text Shadow */
+/* membuat text memiliki bayangan */
+/* sifat dan valuenya sama seperti Box-Shadow */
+/* perbedaannyanya */
+/* Text-Shadow tidak memiliki Value Inset Dan Spread */
+.div2 h1{
+    text-align: center;
+    line-height: 200px;
+    text-shadow: 5px 5px 5px red;
+}
+
+/* Linear Gradient */
+/* digunakan untuk membuat background Gradasi dari ujung ke ujung */
+/* HANYA BISA DIGUNAKAN DI BACKGROUND-IMAGE DAN BACKGROUND */
+/* Value bisa: warna awal,warna akhir */
+/* atau untuk lebih lengkap bisa lihat img belajar coding */
+.div3{
+    height: 200px;
+    width: 250px;
+    background: linear-gradient(red,blue);
+}
+.div3 h1{
+    text-align: center;
+    line-height: 200px;
+    color: white;
+}
+
+/* sama seperti Linear Gradient tetapi */
+/* bukan dari uung ke ujung tapi */
+/* dari Pusat KE Ujung */
+/* valuenya bisa sama  */
+/* tapi bisa lebih kompleks dari Linear */
+/* untuk lebih lengkapnya lihat ke */
+/* img belajar coding */
+.div4{
+    position: absolute;
+    top: 0;
+    left: 280px;
+    height: 200px;
+    width: 250px;
+    background: radial-gradient(orange,green);
+}
+
+/* @font-face */
+/* digunakan untuk mengimpor font-family */
+/* dari file yang ada di penyimpanan internal */
+@font-face {
+    font-family: AlexBrush-Regular;
+    src: url(Fonts/AlexBrush-Regular.ttf) format(truetype)
+}
+.div4 h1{
+    font-family: AlexBrush-Regular;
+    text-align: center;
+    color: white;
+    line-height: 150px;
+}
+
+.div5{
+    position: absolute;
+    top: 220px;
+    left: 300px;
+}
+
+/* Filter */
+/* digunakan untuk memberi filter ke gambar */
+.div5 img{
+    width: 200px;
+    height: 200px;
+    filter: grayscale(100%)
+}
+
+.div6{
+    background-color: palevioletred;
+    color: white;
+    height: 200px;
+    width: 200px;
+    margin: -220px 290px;
+}
+.div6 h1{
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* Transform */
+/* digunakan untuk mengubah format visual suatu elemen */
+/* Value nya bermacam-macam contohnya seperti dibawah */
+/* untuk lebih mengetahiu fungsinya bisa lihat */
+/* img belajar coding */
+.div6:hover{
+    transform: scale(.5)
+               rotate(45deg)
+               skew(45deg)
+               translate(150px, 200px);
+}

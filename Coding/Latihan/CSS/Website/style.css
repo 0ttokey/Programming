@@ -1,0 +1,95 @@
+body {
+    background-color: #eaeaea;
+    background-image: url(img/bg.webp);
+}
+
+.container{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif ;
+    text-transform: capitalize;
+    margin: 40px auto;
+    width: 960px;
+    padding: 10px;
+}
+
+.topbar, .topbar h1{
+    background-color: lightgrey;
+    position: fixed;
+    height: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 70px;
+}
+
+.ribbon{
+    width: 160px;
+    height: 140px;
+    background-image: url(img/ribbonsm.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: -2px;
+}
+
+.ribbon a{
+    line-height: 50px;
+    opacity: 0;
+}
+
+.header a{
+    color: coral;
+    text-decoration: none;
+}
+
+.header a:hover{
+    background-color: coral;
+    color: white;
+}
+
+.hero{
+    background-image: url(img/hero.jpg);
+    width: 960px;;
+    height: 300px;
+    margin: 10px 0;
+    background-size: cover;
+    background-position: 0  ;
+    border-top: 3px solid coral;
+    border-bottom: 3px solid skyblue;
+}
+
+.main{
+    width: 600px;
+    display: inline-block;
+}
+
+.main a{
+    color: coral;
+    text-decoration: none;
+}
+
+.profile{
+    float: right;
+    width: 300px;
+    margin: 0 0 0 60px;
+}
+
+.clear{
+    clear: right;
+}
+
+.footer{
+    background-color: #252323;
+    color: #eaeaea;
+    text-align: center;
+    padding: 10px;
+}
+
+.profile img{
+    float: left;
+}
+
+
+
+
